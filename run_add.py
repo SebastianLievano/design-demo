@@ -6,8 +6,8 @@ def main():
     parser = argparse.ArgumentParser(description="Add two numbers.")
     
     # Add arguments for the two numbers
-    parser.add_argument("num1", type=float, help="The first number")
-    parser.add_argument("num2", type=float, help="The second number")
+    parser.add_argument("num1", type=int, help="The first number")
+    parser.add_argument("num2", type=int, help="The second number")
     
     # Parse the command-line arguments
     args = parser.parse_args()
