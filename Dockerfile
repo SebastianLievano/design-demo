@@ -1,13 +1,10 @@
 # Use an official Python runtime as a base image
 FROM python:3.9-slim
 
-COPY add.py /app/add.py
-COPY hello.py /app/hello.py
-COPY run_add.py /app/hello.py
+# Copy all files and directories from the current directory into /app
+COPY . /app
 
 WORKDIR /app
 
 # Command to run the app
 CMD ["python", "hello.py"]
-
-
