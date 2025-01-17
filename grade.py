@@ -28,12 +28,13 @@ if __name__ == "__main__":
 
     tests = []
 
-    for num1, num2, expected_result in test_cases:
+    for num1, num2, expected_result, weight in test_cases:
         result = add(num1, num2)
 
         test = {}
 
         test['result'] = 'OK' if result == expected_result else 'FAIL'
+        test['weight'] = weight
 
         tests.append(test)
 
