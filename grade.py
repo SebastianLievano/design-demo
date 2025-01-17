@@ -1,4 +1,5 @@
 from add import add
+import json
 
 if __name__ == "__main__":
     test_cases = [
@@ -14,4 +15,4 @@ if __name__ == "__main__":
 
     res['grade'] = 100
 
-    print(res)
+    print(json.dumps(res))
