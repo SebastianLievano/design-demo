@@ -36,6 +36,8 @@ if __name__ == "__main__":
         test['result'] = 'OK' if result == expected_result else 'FAIL'
         test['weight'] = weight
         test['kind'] = kind
+        test['expected_result'] = expected_result
+        test['actual_result'] = result
 
         tests.append(test)
 
