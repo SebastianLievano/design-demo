@@ -18,18 +18,18 @@ def get_grade(tests):
 if __name__ == "__main__":
     # n, expected
     test_cases = [
-        [1, 0, "public"],
-        [4, 2, "public"],
-        [6, 5, "private"],
-        [2, 1, "hidden"]
+        [1, 0, 1, "public"],
+        [4, 2, 1, "public"],
+        [6, 5, 1, "private"],
+        [2, 1, 1, "hidden"]
     ]
 
     res = {}
 
     tests = []
 
-    for num1, num2, expected_result, weight, kind in test_cases:
-        result = add(num1, num2)
+    for n, expected_result, weight, kind in test_cases:
+        result = fib(n)
 
         test = {}
 
